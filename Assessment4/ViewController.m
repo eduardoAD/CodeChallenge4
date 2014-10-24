@@ -17,6 +17,7 @@
 @property UIAlertView *addAlert;
 @property UIAlertView *colorAlert;
 @property NSArray *owners;
+@property UIColor *buttonColor;
 
 @end
 
@@ -26,7 +27,16 @@
 {
     [super viewDidLoad];
     self.title = @"Dog Owners";
+    [self loadButtonColor];
     [self loadData];
+}
+
+-(void)loadButtonColor{
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"buttonColor"];
+    if(data != nil){
+        self.buttonColor = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        self.navigationController.navigationBar.tintColor = self.buttonColor;
+    }
 }
 
 -(void)loadData{
@@ -84,21 +94,25 @@
 
     if (buttonIndex == 0)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor purpleColor];
+        self.buttonColor = [UIColor purpleColor];
     }
     else if (buttonIndex == 1)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor blueColor];
+        self.buttonColor = [UIColor blueColor];
     }
     else if (buttonIndex == 2)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor orangeColor];
+        self.buttonColor = [UIColor orangeColor];
     }
     else if (buttonIndex == 3)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor greenColor];
+        self.buttonColor = [UIColor greenColor];
     }
 
+    self.navigationController.navigationBar.tintColor = self.buttonColor;
+    //save color
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.buttonColor];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"buttonColor"];
 }
 
 //METHOD FOR PRESENTING USER'S COLOR PREFERENCE
