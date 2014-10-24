@@ -8,6 +8,7 @@
 
 #import "DogsViewController.h"
 #import "AddDogViewController.h"
+#import "EditViewController.h"
 #import "Dog.h"
 
 @interface DogsViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -65,8 +66,15 @@
         AddDogViewController *viewController = segue.destinationViewController;
         viewController.owner = self.owner;
     }else{
-        
+        EditViewController *viewController = segue.destinationViewController;
+        Dog *dog = [self.dogs objectAtIndex:self.dogsTableView.indexPathForSelectedRow.row];
+        viewController.dog = dog;
+        viewController.owner = self.owner;
     }
+}
+
+-(IBAction)unwindFromEditViewController:(UIStoryboardSegue *)segue{
+    
 }
 
 @end

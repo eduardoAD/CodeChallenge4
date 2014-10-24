@@ -96,6 +96,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Imh-0F-9KJ" kind="show" identifier="editDog" id="2gO-If-1eo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -126,6 +129,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGG-ia-GSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2160" y="248.2394366197183"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="M6w-S8-qRW">
+            <objects>
+                <viewController id="Imh-0F-9KJ" customClass="EditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RYY-Vv-3RC"/>
+                        <viewControllerLayoutGuide type="bottom" id="UNy-vM-jfx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ejs-pO-CJA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buP-U0-gTS">
+                                <rect key="frame" x="201" y="72" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="DFF-ia-BnC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Breed" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6c-Me-pUz">
+                                <rect key="frame" x="201" y="110" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="l2z-El-Kmg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-SN-04w">
+                                <rect key="frame" x="201" y="148" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="AGr-ZN-skc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qwM-SN-04w" firstAttribute="top" secondItem="r6c-Me-pUz" secondAttribute="bottom" constant="8" id="KVb-Tm-WyG"/>
+                            <constraint firstItem="r6c-Me-pUz" firstAttribute="top" secondItem="buP-U0-gTS" secondAttribute="bottom" constant="8" id="SIb-c1-tBE"/>
+                            <constraint firstAttribute="centerX" secondItem="qwM-SN-04w" secondAttribute="centerX" id="ZzV-95-Tut"/>
+                            <constraint firstItem="buP-U0-gTS" firstAttribute="top" secondItem="RYY-Vv-3RC" secondAttribute="bottom" constant="8" id="b2Z-ud-7GB"/>
+                            <constraint firstAttribute="centerX" secondItem="buP-U0-gTS" secondAttribute="centerX" id="cfa-OX-B1p"/>
+                            <constraint firstAttribute="centerX" secondItem="r6c-Me-pUz" secondAttribute="centerX" id="mQF-9W-rrh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yr6-Mj-ZxD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c3p-AG-DM4">
+                            <connections>
+                                <segue destination="x2W-cN-ejc" kind="unwind" identifier="cancelEdit" unwindAction="unwindFromEditViewController:" id="qw2-zW-0Gc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oYS-g9-zEi">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="Imh-0F-9KJ" id="zdp-0h-yGX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="breedTextField" destination="r6c-Me-pUz" id="PiQ-Bu-xOy"/>
+                        <outlet property="colorTextField" destination="qwM-SN-04w" id="4oG-qL-Crg"/>
+                        <outlet property="nameTextField" destination="buP-U0-gTS" id="k3f-du-59U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75X-Js-lfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="x2W-cN-ejc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2160" y="975"/>
         </scene>
         <!--Add Dog View Controller-->
         <scene sceneID="bYx-Mm-O5H">

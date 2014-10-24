@@ -26,6 +26,7 @@
 		93CD77ED199964A100D27E0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77EB199964A100D27E0A /* Model.xcdatamodeld */; };
 		E4422A8319FAD28B002CA851 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A8219FAD28B002CA851 /* Owner.m */; };
 		E4422A8619FAD28C002CA851 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A8519FAD28C002CA851 /* Dog.m */; };
+		E4422A8919FAE7B1002CA851 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A8819FAE7B1002CA851 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		E4422A8219FAD28B002CA851 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
 		E4422A8419FAD28C002CA851 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		E4422A8519FAD28C002CA851 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		E4422A8719FAE7B1002CA851 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		E4422A8819FAE7B1002CA851 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				93CD77E6199962E900D27E0A /* DogsViewController.m */,
 				93CD77E81999642A00D27E0A /* AddDogViewController.h */,
 				93CD77E91999642A00D27E0A /* AddDogViewController.m */,
+				E4422A8719FAE7B1002CA851 /* EditViewController.h */,
+				E4422A8819FAE7B1002CA851 /* EditViewController.m */,
 				93CD77C81999604D00D27E0A /* Images.xcassets */,
 				93CD77EB199964A100D27E0A /* Model.xcdatamodeld */,
 				E4422A8419FAD28C002CA851 /* Dog.h */,
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CD77C71999604D00D27E0A /* ViewController.m in Sources */,
+				E4422A8919FAE7B1002CA851 /* EditViewController.m in Sources */,
 				93CD77C11999604D00D27E0A /* AppDelegate.m in Sources */,
 				E4422A8619FAD28C002CA851 /* Dog.m in Sources */,
 				93CD77BD1999604D00D27E0A /* main.m in Sources */,

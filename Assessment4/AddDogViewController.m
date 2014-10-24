@@ -7,6 +7,7 @@
 //
 
 #import "AddDogViewController.h"
+#import "Dog.h"
 
 @interface AddDogViewController ()
 
