@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Owner.h"
+#import "Dog.h"
 
 @interface AddDogViewController : UIViewController
 
-@property NSString *name;
-@property NSString *breed;
-@property NSString *color;
+@property (strong, nonatomic) Owner *owner;
 
 @end

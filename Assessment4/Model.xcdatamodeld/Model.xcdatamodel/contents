@@ -4,14 +4,14 @@
         <attribute name="breed" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="dogs" inverseEntity="Owner" syncable="YES"/>
+        <relationship name="myOwner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="dogs" inverseEntity="Owner" syncable="YES"/>
     </entity>
     <entity name="Owner" representedClassName="Owner" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="dogs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dog" inverseName="owner" inverseEntity="Dog" syncable="YES"/>
+        <relationship name="dogs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dog" inverseName="myOwner" inverseEntity="Dog" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Dog" positionX="-54" positionY="0" width="128" height="105"/>
-        <element name="Owner" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Dog" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Owner" positionX="0" positionY="0" width="128" height="75"/>
     </elements>
 </model>

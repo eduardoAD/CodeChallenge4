@@ -15,6 +15,6 @@
 @dynamic breed;
 @dynamic color;
 @dynamic name;
-@dynamic owner;
+@dynamic myOwner;
 
 @end

@@ -27,12 +27,16 @@
 
 - (IBAction)onPressedUpdateDog:(UIButton *)sender
 {
-    self.name = self.nameTextField.text;
-    self.breed = self.breedTextField.text;
-    self.color = self.colorTextField.text;
+    Dog *doggy = [NSEntityDescription insertNewObjectForEntityForName:@"Dog" inManagedObjectContext:self.owner.managedObjectContext];
 
-    [self performSegueWithIdentifier:@"saveDog" sender:self];
-    //[self dismissViewControllerAnimated:YES completion:nil];
+    doggy.name = self.nameTextField.text;
+    doggy.breed = self.breedTextField.text;
+    doggy.color = self.colorTextField.text;
+    doggy.myOwner = self.owner;
+
+    [self.owner.managedObjectContext save:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 @end

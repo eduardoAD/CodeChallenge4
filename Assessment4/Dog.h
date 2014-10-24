@@ -16,6 +16,6 @@
 @property (nonatomic, retain) NSString * breed;
 @property (nonatomic, retain) NSString * color;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) Owner *owner;
+@property (nonatomic, retain) Owner *myOwner;
 
 @end

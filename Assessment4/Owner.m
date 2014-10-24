@@ -7,6 +7,7 @@
 //
 
 #import "Owner.h"
+#import "Dog.h"
 
 
 @implementation Owner

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Owner.h"
 
 @interface DogsViewController : UIViewController
 
-@property NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) Owner *owner;
 
 @end

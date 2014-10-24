@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DogsViewController.h"
 #import "Owner.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
@@ -116,8 +117,10 @@
 #pragma mark - Segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
-    
+    Owner *personOwner = [self.owners objectAtIndex:self.myTableView.indexPathForSelectedRow.row];
+    DogsViewController *viewController = segue.destinationViewController;
+    viewController.owner = personOwner;
+    //NSLog(@"owner: %@",personOwner.name);
 }
 
 @end
