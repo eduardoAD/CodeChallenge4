@@ -25,7 +25,7 @@
 		93CD77EA1999642A00D27E0A /* AddDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77E91999642A00D27E0A /* AddDogViewController.m */; };
 		93CD77ED199964A100D27E0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77EB199964A100D27E0A /* Model.xcdatamodeld */; };
 		E4422A7A19FAA1B1002CA851 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A7919FAA1B1002CA851 /* Owner.m */; };
-		E4422A7D19FAA1B2002CA851 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A7C19FAA1B2002CA851 /* Dog.m */; };
+		E4422A8019FAAFB5002CA851 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = E4422A7F19FAAFB5002CA851 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		93CD77EC199964A100D27E0A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E4422A7819FAA1B1002CA851 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Owner.h; sourceTree = "<group>"; };
 		E4422A7919FAA1B1002CA851 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
-		E4422A7B19FAA1B2002CA851 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
-		E4422A7C19FAA1B2002CA851 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		E4422A7E19FAAFB5002CA851 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		E4422A7F19FAAFB5002CA851 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 				93CD77E91999642A00D27E0A /* AddDogViewController.m */,
 				93CD77C81999604D00D27E0A /* Images.xcassets */,
 				93CD77EB199964A100D27E0A /* Model.xcdatamodeld */,
-				E4422A7B19FAA1B2002CA851 /* Dog.h */,
-				E4422A7C19FAA1B2002CA851 /* Dog.m */,
+				E4422A7E19FAAFB5002CA851 /* Dog.h */,
+				E4422A7F19FAAFB5002CA851 /* Dog.m */,
 				E4422A7819FAA1B1002CA851 /* Owner.h */,
 				E4422A7919FAA1B1002CA851 /* Owner.m */,
 				93CD77B71999604D00D27E0A /* Supporting Files */,
@@ -274,7 +274,7 @@
 			files = (
 				93CD77C71999604D00D27E0A /* ViewController.m in Sources */,
 				93CD77C11999604D00D27E0A /* AppDelegate.m in Sources */,
-				E4422A7D19FAA1B2002CA851 /* Dog.m in Sources */,
+				E4422A8019FAAFB5002CA851 /* Dog.m in Sources */,
 				93CD77BD1999604D00D27E0A /* main.m in Sources */,
 				93CD77EA1999642A00D27E0A /* AddDogViewController.m in Sources */,
 				E4422A7A19FAA1B1002CA851 /* Owner.m in Sources */,

@@ -12,9 +12,9 @@
 
 @implementation Dog
 
-@dynamic name;
 @dynamic breed;
 @dynamic color;
+@dynamic name;
 @dynamic owner;
 
 @end

@@ -112,4 +112,12 @@
     [self.colorAlert show];
 }
 
+
+#pragma mark - Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
+    
+}
+
 @end

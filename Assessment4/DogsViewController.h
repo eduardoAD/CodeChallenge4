@@ -10,4 +10,6 @@
 
 @interface DogsViewController : UIViewController
 
+@property NSManagedObjectContext *managedObjectContext;
+
 @end

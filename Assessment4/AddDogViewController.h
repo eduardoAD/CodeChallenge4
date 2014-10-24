@@ -10,4 +10,8 @@
 
 @interface AddDogViewController : UIViewController
 
+@property NSString *name;
+@property NSString *breed;
+@property NSString *color;
+
 @end

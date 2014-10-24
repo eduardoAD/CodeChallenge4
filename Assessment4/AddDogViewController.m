@@ -18,25 +18,21 @@
 
 @implementation AddDogViewController
 
-<<<<<<< HEAD
-//TODO: UPDATE CODE ACCORIDNGLY
-
-=======
->>>>>>> FETCH_HEAD
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Add Dog";
 }
 
-<<<<<<< HEAD
+
 - (IBAction)onPressedUpdateDog:(UIButton *)sender
 {
+    self.name = self.nameTextField.text;
+    self.breed = self.breedTextField.text;
+    self.color = self.colorTextField.text;
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"saveDog" sender:self];
+    //[self dismissViewControllerAnimated:YES completion:nil];
 }
-=======
-//TODO: UPDATE THIS ACCORDINGLY
->>>>>>> FETCH_HEAD
 
 @end
